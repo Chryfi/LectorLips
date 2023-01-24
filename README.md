@@ -2,18 +2,17 @@
 A cool script that allows to convert Adobe Characte Animator mouth animation data into a sequencer morph.
 <br><br>
 ## Setup
-First you need to install Python. You probably need to restart your computer after installing it. Test ouf if the command `python` works. It should look something like this:
+First you need to install Python, for example, via Microsoft Store. You probably need to restart your computer after installing it. Test ouf if the command `python` works in the CMD. It should look something like this:
 
 ![Screenshot_658](https://user-images.githubusercontent.com/71967555/206724791-961cb012-f198-4d24-b31d-5acb22da707b.png)
 
-Now you need to tell the script what filenames the mouth pictures have and which mouth they belong to. The image [visemeMapping.jpg](./visemeMapping.jpg) shows the mouth shapes used by Adobe Character Animator. The numbers indicate the order in which you have to define your image file names.
+Now you need to tell the script how your mouth textures are named like and which Character Animator mouth they belong to. The image [visemeMapping.jpg](./visemeMapping.jpg) shows the mouth shapes used by Adobe Character Animator. The numbers indicate the order in which you have to define your image file names.
 
-Type `cmd` into the file explorer in the LectorLips folder like this:
+Type `cmd` into the file explorer in the LectorLips folder like this to open the CMD in that folder:
 
 ![Screenshot_659](https://user-images.githubusercontent.com/71967555/206726526-122a93c3-4212-41e6-927b-7faf01becd76.png)
 
-This will open the CMD in that folder.
-Now you need to enter the command 
+Now you need to enter the command to setup the names of your mouth textures.
 ```
 python __init__.py -create_viseme_mapping 0.png 1.png 2.png 3.png 4.png 5.png 6.png 7.png 8.png 9.png 10.png 11.png 12.png 13.png 14.png
 ```
@@ -34,18 +33,21 @@ To convert your mouth animation, you first need to convert it into After Effects
 
 ![copyvisemes](https://user-images.githubusercontent.com/71967555/207731794-44059f09-9e81-441c-829c-5f5464af86e8.png)
 
-Now you need to paste the copied data into a text file. Then you can execute the command:
+Now you need to paste the copied data into a .txt file. It's simplest if you just create the .txt file in the LectorLips folder.
+
+Then you can execute the command to conver the pasted keyframes into a sequencer morph:
 ```
-python __init__.py -create_sequencer /path/to/AfterEffects_keyframes.txt "b.a:path/to/blockbuster/mouth/textures/"
+python __init__.py -create_sequencer full/path/to/AfterEffects_keyframes.txt "b.a:path/to/blockbuster/mouth/textures/"
 ```
 
-With the argument `/path/to/AfterEffects_keyframes.txt` you define the path to the file where you copied the keyframe data to.
+With the argument `full/path/to/AfterEffects_keyframes.txt` you define the path to the file where you copied the keyframe data to. If you created the .txt file in the LectorLips you can just enter the name of your file.
 
-With `"b.a:path/to/blockbuster/mouth/textures/"` you define the texture path that should be used in the Blockbuster mod. The texture files in that folder need to have the same names as the ones you defined in your setup.
+With `"b.a:path/to/blockbuster/mouth/textures/"` you define the texture path that should be used in the Blockbuster mod. The texture files in that folder need to have the same names as the ones you defined in your setup. Your mouth textures need to be in a folder under `../config/blockbuster/models/`.
 
-The command will create a file with the current date where it writes the generated sequencer morph NBT data into.
+The command will create a .txt file with the current date as name, where it writes the generated sequencer morph NBT data into.
 
-You need to copy this NBT data and paste it into the morph menu of metamorph.
+You need to copy all of the NBT data and paste it into a user category of the morph menu like this: 
+![Screenshot_11](https://user-images.githubusercontent.com/71967555/214431313-d3f498b2-343f-4180-8fb8-e71dad6940af.png)
 
 That's it!
 <br><br>
