@@ -35,12 +35,12 @@ To convert your mouth animation, you first need to convert it into After Effects
 
 Now you need to paste the copied data into a .txt file. It's simplest if you just create the .txt file in the LectorLips folder.
 
-Then you can execute the command to conver the pasted keyframes into a sequencer morph:
+Then you can execute the command to convert the pasted keyframes into a sequencer morph:
 ```
 python __init__.py -create_sequencer full/path/to/AfterEffects_keyframes.txt "b.a:path/to/blockbuster/mouth/textures/"
 ```
 
-With the argument `full/path/to/AfterEffects_keyframes.txt` you define the path to the file where you copied the keyframe data to. If you created the .txt file in the LectorLips you can just enter the name of your file.
+With the argument `full/path/to/AfterEffects_keyframes.txt` you define the path to the file where you copied the keyframe data to. If you created the .txt file in the LectorLips folder, you can just enter the name of your file.
 
 With `"b.a:path/to/blockbuster/mouth/textures/"` you define the texture path that should be used in the Blockbuster mod. The texture files in that folder need to have the same names as the ones you defined in your setup. Your mouth textures need to be in a folder under `../config/blockbuster/models/`.
 
