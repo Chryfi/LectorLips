@@ -42,7 +42,7 @@ python __init__.py -create_sequencer full/path/to/AfterEffects_keyframes.txt "b.
 
 With the argument `full/path/to/AfterEffects_keyframes.txt` you define the path to the file where you copied the keyframe data to. If you created the .txt file in the LectorLips folder, you can just enter the name of your file.
 
-With `"b.a:path/to/blockbuster/mouth/textures/"` you define the texture path that should be used in the Blockbuster mod. The texture files in that folder need to have the same names as the ones you defined in your setup. Your mouth textures need to be in a folder under `../config/blockbuster/models/`.
+With `"b.a:path/to/blockbuster/mouth/textures/"` you define the texture path that should be used in the Blockbuster mod (this does not include the full system path, only the path inside the models folder). The texture files in that folder need to have the same names as the ones you defined in your setup. Your mouth textures need to be in a folder under `../config/blockbuster/models/`. Example: Your textures are in the folder `../config/blockbuster/models/mouth_steve/` then your blockbuster path needs to be `"b.a:mouth_steve"`.
 
 The command will create a .txt file with the current date as name, where it writes the generated sequencer morph NBT data into.
 
