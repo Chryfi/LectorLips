@@ -1,6 +1,7 @@
-# LectorLips
-A cool script that allows to convert Adobe Characte Animator mouth animation data into a sequencer morph.
+![LectorLipsWhite-2](https://github.com/Chryfi/LectorLips/assets/71967555/68e6df4f-682b-4c06-97eb-16150c311566)
 <br><br>
+A cool script that allows to convert Adobe Characte Animator mouth animation data into a sequencer morph for the Minecraft Blockbuster Mod.
+<br>
 ## Setup
 First you need to install Python, for example, via Microsoft Store. You probably need to restart your computer after installing it. Test ouf if the command `python` works in the CMD. It should look something like this:
 
