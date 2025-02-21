@@ -2,6 +2,9 @@
 <br><br>
 A cool script that allows to convert Adobe Characte Animator mouth animation data into a sequencer morph for the Minecraft Blockbuster Mod.
 <br>
+# Now available with a UI [https://lectorlips.com/](https://lectorlips.com/) 
+<br>
+
 ## Setup
 First you need to install Python, for example, via Microsoft Store. You probably need to restart your computer after installing it. Test ouf if the command `python` works in the CMD. It should look something like this:
 
